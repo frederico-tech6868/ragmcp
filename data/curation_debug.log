@@ -1,0 +1,177 @@
+2026-09-29 07:48:28,443 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 07:48:28,443 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 07:48:28,443 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 07:48:28,443 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 07:48:28,443 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 07:48:28,443 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 07:48:28,443 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 07:48:28,443 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 07:48:28,445 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 07:48:28,445 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 07:48:28,445 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 07:48:28,445 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 07:48:28,445 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 07:48:28,446 - ERROR - Error processing skill bad skill: Missing metadata 'metadata'
+2026-09-29 07:48:28,446 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 07:48:28,446 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 07:48:28,446 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 07:48:28,446 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 07:48:28,448 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 07:48:28,449 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 07:48:28,449 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 07:48:28,449 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 07:48:28,449 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 07:48:28,449 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 07:48:28,449 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 07:48:28,449 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 07:52:45,498 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 07:52:45,498 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 07:52:45,498 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 07:52:45,498 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 07:52:45,499 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 07:52:45,500 - ERROR - Error processing skill bad skill: Missing metadata 'metadata'
+2026-09-29 07:52:45,500 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 07:52:45,500 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 07:52:45,500 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 07:52:45,500 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 07:52:45,502 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 07:52:45,503 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 07:52:45,503 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 07:52:45,503 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 07:52:45,503 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 07:52:45,503 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 07:52:45,503 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 07:52:45,503 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:23:23,589 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:23:23,589 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:23:23,589 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:23:23,589 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:23:23,589 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:23:23,589 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:23:23,590 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:23:23,590 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:23:23,591 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:23:23,591 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:23:23,591 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:23:23,591 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:23:23,591 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:23:23,591 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:23:23,591 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:23:23,591 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:23:23,594 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:23:23,594 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:23:23,594 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:23:23,594 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:23:23,594 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:23:23,595 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:23:23,595 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:23:23,595 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:23:23,595 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:23:23,595 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:26:27,072 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:26:27,072 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:26:27,077 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:26:27,077 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:26:27,077 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:26:27,077 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:26:27,077 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:26:27,077 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:26:27,079 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:26:27,079 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:26:27,079 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:26:27,079 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:26:27,079 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:26:27,079 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:26:27,080 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:26:27,080 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:26:27,083 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:26:27,083 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:26:27,083 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:26:27,083 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:26:27,083 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:26:27,084 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:26:27,084 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:26:27,084 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:26:27,084 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:26:27,084 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:32:58,282 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:32:58,282 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:32:58,287 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:32:58,287 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:32:58,287 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:32:58,287 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:32:58,288 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:32:58,288 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:32:58,289 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:32:58,289 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:32:58,289 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:32:58,289 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:32:58,289 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:32:58,289 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:32:58,289 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:32:58,289 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:32:58,292 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:32:58,292 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:32:58,292 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:32:58,292 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:32:58,292 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:32:58,293 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:32:58,293 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:32:58,293 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:32:58,293 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:32:58,293 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:33:22,955 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:33:22,955 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:33:22,960 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:33:22,960 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:33:22,960 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:33:22,960 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:33:22,960 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:33:22,960 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:33:22,962 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:33:22,962 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:33:22,963 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:33:22,963 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:33:22,963 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:33:22,963 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:33:22,963 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:33:22,963 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:33:22,967 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:33:22,967 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:33:22,967 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:33:22,967 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:33:22,967 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:33:22,968 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:33:22,969 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:33:22,969 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:33:22,969 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:33:22,969 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:34:43,482 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:34:43,482 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:34:43,487 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:34:43,487 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:34:43,487 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:34:43,487 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:34:43,488 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:34:43,488 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:34:43,490 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:34:43,490 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:34:43,491 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:34:43,491 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:34:43,492 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:34:43,492 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:34:43,492 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:34:43,492 - ERROR - Unexpected error processing skill bad skill: string indices must be integers, not 'str'
+2026-09-29 09:34:43,498 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:34:43,498 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:34:43,498 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:34:43,498 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:34:43,498 - CRITICAL - Critical error in curation process: cannot access local variable 'skill_name' where it is not associated with a value
+2026-09-29 09:34:43,500 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:34:43,500 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:34:43,500 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:34:43,500 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:34:43,501 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:34:43,501 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:34:43,501 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
+2026-09-29 09:34:43,501 - ERROR - Unexpected error processing skill test skill: string indices must be integers, not 'str'
