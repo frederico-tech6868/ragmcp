@@ -1,0 +1,3 @@
+[tests]
+# run after every turn that changes files; failures go back to the model
+command = ".venv/bin/python -m pytest -q src"

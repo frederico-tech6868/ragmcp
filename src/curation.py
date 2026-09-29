@@ -128,99 +128,71 @@ def update_skill(skill_data):
     return True
 
 
+def _curate_one(skill):
+    """Evaluate one skill and update it if needed; returns its result entry."""
+    skill_name = os.path.basename(str(skill.get('path', '?'))).replace('.md', '').replace('_', ' ')
+    entry = {'skill': skill_name, 'timestamp': datetime.now().isoformat()}
+    try:
+        if not skill.get('metadata'):
+            raise KeyError('metadata')
+        if evaluate_skill(skill) == 'update':
+            update_skill(skill)
+            entry['action'] = 'updated'
+        else:
+            entry['action'] = 'kept'
+    except KeyError as e:
+        logging.error(f"Error processing skill {skill_name}: Missing metadata {e}")
+        entry.update(action='error', error=f"Missing metadata: {e}")
+    except Exception as e:
+        logging.error(f"Unexpected error processing skill {skill_name}: {e}")
+        entry.update(action='error', error=f"{type(e).__name__}: {e}")
+    return entry
+
+
 def curate_skills(skill_data=None):
     """Main function to curate all skills in the system.
 
     skill_data: a list of skill dicts ({'path', 'content', 'metadata'}); None curates
-    every skill in SKILLS_DIR.
+    every skill in SKILLS_DIR. Each run is appended to the curation log and to the
+    curation history in persistent memory; a run that fails as a whole is recorded
+    there with an 'error' entry.
     """
-    if skill_data is None:
-        skill_data = list(load_skills().values())
     results = []
     try:
+        if skill_data is None:
+            skill_data = list(load_skills().values())
         os.makedirs(os.path.dirname(CURATION_LOG), exist_ok=True)
         os.makedirs(PERSISTENT_MEMORY_DIR, exist_ok=True)
 
-        results = []
-
-        for skill in (skill_data or []):
-            try:
-                skill_name = skill['path'].replace('.md', '').replace('_', ' ')
-                skill_data = skill
-
-                status = evaluate_skill(skill_data)
-                if status == 'update':
-                    updated = update_skill(skill_data)
-                    results.append({
-                        'skill': skill_name,
-                        'action': 'updated',
-                        'timestamp': datetime.now().isoformat()
-                    })
-                else:
-                    results.append({
-                        'skill': skill_name,
-                        'action': 'kept',
-                        'timestamp': datetime.now().isoformat()
-                    })
-            except KeyError as e:
-                # Handle missing metadata in skill data
-                logging.error(f"Error processing skill {skill_name}: Missing metadata {e}")
-                results.append({
-                    'skill': skill_name,
-                    'action': 'error',
-                    'timestamp': datetime.now().isoformat(),
-                    'error': str(e)
-                })
-            except Exception as e:
-                # Handle other unexpected errors
-                logging.error(f"Unexpected error processing skill {skill_name}: {e}")
-                results.append({
-                    'skill': skill_name,
-                    'action': 'error',
-                    'timestamp': datetime.now().isoformat(),
-                    'error': str(e)
-                })
+        results = [_curate_one(skill) for skill in skill_data]
+        run = {'timestamp': datetime.now().isoformat(), 'results': results}
 
         # Log curation results
+        log_data = []
         if os.path.exists(CURATION_LOG):
             with open(CURATION_LOG, 'r') as f:
                 log_data = json.load(f)
-        else:
-            log_data = []
-
-        log_data.append({
-            'timestamp': datetime.now().isoformat(),
-            'results': results
-        })
-
+        log_data.append(run)
         with open(CURATION_LOG, 'w') as f:
             json.dump(log_data, f)
 
-        # Save persistent memory
-        persistent_memory = {
-            'last_curation_time': datetime.now().isoformat(),
-            'results': results
-        }
-
+        # Save persistent memory: the last run, and the history of all runs
         with open(os.path.join(PERSISTENT_MEMORY_DIR, 'memory.json'), 'w') as f:
-            json.dump(persistent_memory, f)
+            json.dump({'last_curation_time': run['timestamp'], 'results': results}, f)
+        save_curation_history(load_curation_history() + [run])
 
         # Skill creation integration
         if any(result['action'] == 'updated' for result in results):
-            # Trigger skill creation process for updated skills
-            # This is a placeholder - actual implementation would involve
-            # generating new skill content and saving it to SKILL_CREATION_DIR
-            # For demonstration, we'll create a new skill file
+            # Placeholder: record that skills were updated with a new skill file
             new_skill_content = "# New Skill\n\n## Last Updated\n" + datetime.now().strftime('%Y-%m-%d')
-            new_skill_path = os.path.join(SKILL_CREATION_DIR, 'new_skill.md')
-            with open(new_skill_path, 'w') as f:
+            with open(os.path.join(SKILL_CREATION_DIR, 'new_skill.md'), 'w') as f:
                 f.write(new_skill_content)
 
     except Exception as e:
         # Handle any top-level errors
         logging.critical(f"Critical error in curation process: {e}")
-        with open(os.path.join(PERSISTENT_MEMORY_DIR, 'memory.json'), 'w') as f:
-            json.dump({'error': str(e)}, f)
+        save_curation_history(load_curation_history() + [
+            {'timestamp': datetime.now().isoformat(), 'error': str(e)}])
 
     return results
 

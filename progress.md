@@ -1,17 +1,23 @@
 ## Project Progress
 
-### Current Task: Write tests for edge cases in curation logic
-- **Status:** In progress
-- **Completed:**
-  - Expanded Persistent Memory to store curation history (done)
-- **Ongoing:**
-  - Test 1: `test_curation_log_creation` (partial success, requires fixing test setup)
-  - Test 2: `test_unexpected_error` (failed due to import error and test structure issues)
-- **Issues Encountered:**
-  - `parse_tool_call` import error in `src/test_curation.py`
-  - Test execution failures due to incorrect mocking/setup
-- **Next Steps:**
-  1. Resolve import errors in test file
-  2. Fix test structure for `test_unexpected_error`
-  3. Add tests for missing skill data and error handling
-  4. Proceed with Slack integration and Persistent Memory updates
+### Done: Tests for edge cases in curation logic
+- Cleaned up `src/curation.py` (966 -> ~250 lines): duplicated constants, functions and
+  copied `curate_skills` bodies removed. `src/memory.py` duplicates removed too.
+- Data paths are relative to the project root, so scripts and tests work from any
+  directory.
+- `curate_skills` now appends every run (or an `error` entry for a failed run) to the
+  curation history in `data/persistent_memory/curation_history.json`.
+- `curate_skills()` with no argument curates everything in `skills/` (used by
+  `start_curation_loop`).
+- `src/test_curation.py` rewritten: 9 tests, all passing, run in a temporary directory
+  (they no longer write to `data/`). Run with `.venv/bin/python -m pytest -q src`.
+
+### Known issues
+- `src/scheduler.py` imports `apscheduler`, which is not a dependency.
+- `src/test_memory.py` and `src/test_natural_language_parser.py` are scripts, not pytest
+  tests.
+- `src/tool_parser.py` holds two modules pasted together.
+
+### Next Steps
+1. Proceed with Slack integration
+2. Continue with Persistent Memory updates
