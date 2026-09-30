@@ -23,8 +23,16 @@
   the job in a daemon thread and returns an object whose `stop()` takes effect at once.
   A failing job is logged and the loop keeps going. `src/test_scheduler.py`: 3 tests.
 
+### Done: tool_parser split
+- `src/tool_parser.py` has only `parse_tool_call`; the dynamic tool registry
+  (`DYNAMIC_TOOLS`, `verify_code_safety_isolated`, `secure_register_tool`) is in
+  `src/tool_registry.py`. Fixed `secure_register_tool` (`local_scope = {{}}` raised
+  TypeError). Tests: `src/test_tool_parser.py`, `src/test_tool_registry.py`.
+- Note: `verify_code_safety_isolated` only checks that the code compiles and runs in a
+  subprocess; `secure_register_tool` then `exec`s it in-process. It is not a sandbox.
+
 ### Known issues
-- `src/tool_parser.py` holds two modules pasted together.
+- None recorded.
 
 ### Next Steps
 1. Proceed with Slack integration
