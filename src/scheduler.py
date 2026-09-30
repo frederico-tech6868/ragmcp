@@ -1,33 +1,48 @@
-from apscheduler.schedulers.background import BackgroundScheduler
-import time
+"""Run a job (skill curation by default) at a fixed interval in a background thread."""
+
 import logging
+import threading
+
 from curation import curate_skills
 
-# Background execution loop with APScheduler for task coordination
-
-# Set up logging
 logging.basicConfig(level=logging.INFO)
-scheduler = BackgroundScheduler()
 
-def start_scheduler():
-    """Initialize and start the background scheduler."""
-    try:
-        # Schedule the curation process to run every 24 hours
-        scheduler.add_job(curate_skills, 'interval', hours=24, misfire_grace_time=60, coalesce=True)
-        
-        # Start the scheduler
-        scheduler.start()
-        logging.info("Scheduler started successfully")
-        
-        # Keep the main thread alive
-        while True:
-            time.sleep(1)
-    except (KeyboardInterrupt, SystemExit):
-        logging.info("Scheduler shutdown")
-        scheduler.shutdown()
-    except Exception as e:
-        logging.error(f"Scheduler error: {str(e)}")
-        scheduler.shutdown()
+DAY = 24 * 60 * 60
+
+
+class Scheduler:
+    def __init__(self, interval, run):
+        self.interval = interval
+        self.run = run
+        self._stop = threading.Event()
+        self.thread = threading.Thread(target=self._loop, daemon=True)
+
+    def _loop(self):
+        while not self._stop.is_set():
+            try:
+                self.run()
+            except Exception:
+                logging.exception("Scheduled job failed")
+            self._stop.wait(self.interval)   # returns at once when stop() is called
+
+    def stop(self, timeout=None):
+        """Stop the loop and wait for the thread (a job in progress finishes first)."""
+        self._stop.set()
+        self.thread.join(timeout)
+
+
+def start_scheduler(interval=DAY, run=curate_skills):
+    """Run `run()` now and then every `interval` seconds; returns a Scheduler with stop()."""
+    scheduler = Scheduler(interval, run)
+    scheduler.thread.start()
+    logging.info("Scheduler started (every %s s)", interval)
+    return scheduler
+
 
 if __name__ == "__main__":
-    start_scheduler()
+    scheduler = start_scheduler()
+    try:
+        threading.Event().wait()
+    except KeyboardInterrupt:
+        scheduler.stop()
+        logging.info("Scheduler shutdown")

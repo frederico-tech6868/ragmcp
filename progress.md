@@ -18,8 +18,12 @@
   ("font size to 14"), handles "enable X", and no longer duplicates "then" steps.
   Conditionals ("if ..., then ...") are saved as unrecognized tasks.
 
+### Done: Scheduler without apscheduler
+- `src/scheduler.py` uses only the standard library: `start_scheduler(interval, run)` runs
+  the job in a daemon thread and returns an object whose `stop()` takes effect at once.
+  A failing job is logged and the loop keeps going. `src/test_scheduler.py`: 3 tests.
+
 ### Known issues
-- `src/scheduler.py` imports `apscheduler`, which is not a dependency.
 - `src/tool_parser.py` holds two modules pasted together.
 
 ### Next Steps
