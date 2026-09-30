@@ -30,10 +30,30 @@ def get_preference(key, default=None):
     return default
 
 
+def delete_preference(key):
+    """Remove a preference key from the preferences file."""
+    if not os.path.exists(PREFERENCES_FILE):
+        return False
+
+    preferences = {}
+    with open(PREFERENCES_FILE, 'r') as f:
+        try:
+            preferences = json.load(f)
+        except json.JSONDecodeError:
+            # Handle empty or invalid JSON
+            pass
+
+    if key in preferences:
+        del preferences[key]
+        with open(PREFERENCES_FILE, 'w') as f:
+            json.dump(preferences, f)
+        return True
+    return False
+
 def save_environment_setup(setup_data):
     """Save environment setup information to disk."""
     os.makedirs(os.path.dirname(ENV_SETUP_FILE), exist_ok=True)
-    
+
     with open(ENV_SETUP_FILE, 'w') as f:
         json.dump(setup_data, f)
 

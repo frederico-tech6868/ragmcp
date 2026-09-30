@@ -6,7 +6,7 @@ import sys
 import pytest
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
-from memory import save_preference, get_preference, save_environment_setup, get_environment_setup  # noqa: E402
+from memory import save_preference, get_preference, delete_preference, save_environment_setup, get_environment_setup  # noqa: E402
 
 
 @pytest.fixture
@@ -33,6 +33,12 @@ def test_save_and_get_preference(tmp_dir, monkeypatch_env):
     assert get_preference("language", "default") == "en"
     assert get_preference("font_size", 12) == 14
     assert get_preference("nonexistent", "default") == "default"
+
+    # Test delete_preference
+    assert delete_preference("theme") is True
+    assert get_preference("theme", "default") == "default"
+
+    assert delete_preference("nonexistent") is False
 
 
 def test_save_and_get_environment_setup(tmp_dir, monkeypatch_env):
