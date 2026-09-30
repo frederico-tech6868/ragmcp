@@ -12,10 +12,14 @@
 - `src/test_curation.py` rewritten: 9 tests, all passing, run in a temporary directory
   (they no longer write to `data/`). Run with `.venv/bin/python -m pytest -q src`.
 
+### Done: Natural language parser tests and fixes
+- `src/test_natural_language_parser.py` is now 6 pytest tests (no writes to `data/`).
+- `parse_natural_language_task` splits on "and"/"then" before matching, allows digits
+  ("font size to 14"), handles "enable X", and no longer duplicates "then" steps.
+  Conditionals ("if ..., then ...") are saved as unrecognized tasks.
+
 ### Known issues
 - `src/scheduler.py` imports `apscheduler`, which is not a dependency.
-- `src/test_memory.py` and `src/test_natural_language_parser.py` are scripts, not pytest
-  tests.
 - `src/tool_parser.py` holds two modules pasted together.
 
 ### Next Steps

@@ -1,33 +1,32 @@
-import sys
-import os
-from natural_language_parser import parse_natural_language_task, execute_parsed_commands
+import pytest
+from natural_language_parser import parse_natural_language_task
 
-# Test natural language parsing
-if __name__ == "__main__":
-    # Test case 1: Recognized command
-    task1 = "Set theme to dark and language to English"
-    commands1 = parse_natural_language_task(task1)
-    print("Test 1 - Recognized command:")
-    print(commands1)
-    execute_parsed_commands(commands1)
+def test_recognized_command():
+    task = "Set theme to dark and language to English"
+    commands = parse_natural_language_task(task)
+    assert commands == [('save_preference', 'theme', 'dark'), ('save_preference', 'language', 'English')]
 
-    # Test case 2: Unrecognized command
-    task2 = "Configure the system for high performance"
-    commands2 = parse_natural_language_task(task2)
-    print("\nTest 2 - Unrecognized command:")
-    print(commands2)
-    execute_parsed_commands(commands2)
+def test_unrecognized_command():
+    task = "Configure the system for high performance"
+    commands = parse_natural_language_task(task)
+    assert commands == [('save_environment_setup', 'unrecognized_task: Configure the system for high performance')]
 
-    # Test case 3: Mixed commands
-    task3 = "Set font size to 14 and enable dark mode"
-    commands3 = parse_natural_language_task(task3)
-    print("\nTest 3 - Mixed commands:")
-    print(commands3)
-    execute_parsed_commands(commands3)
+def test_mixed_commands():
+    task = "Set font size to 14 and enable dark mode"
+    commands = parse_natural_language_task(task)
+    assert commands == [('save_preference', 'font size', '14'), ('save_preference', 'dark mode', 'enable')]
 
-    # Test case 4: Conditional command
-    task4 = "if the system is under load, then set performance mode to high else set to normal"
-    commands4 = parse_natural_language_task(task4)
-    print("\nTest 4 - Conditional command:")
-    print(commands4)
-    execute_parsed_commands(commands4)
+def test_conditional_command():
+    task = "if the system is under load, then set performance mode to high else set to normal"
+    commands = parse_natural_language_task(task)
+    assert commands == [('save_environment_setup', 'unrecognized_task: if the system is under load, then set performance mode to high else set to normal')]
+
+
+def test_then_steps_are_not_duplicated():
+    commands = parse_natural_language_task("Set theme to dark then set language to English")
+    assert commands == [('save_preference', 'theme', 'dark'), ('save_preference', 'language', 'English')]
+
+
+def test_comma_values_become_a_list():
+    commands = parse_natural_language_task("Set languages to English, French")
+    assert commands == [('save_preference', 'languages', ['English', 'French'])]
